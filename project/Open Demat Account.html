@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demat Account</title>
+</head>
+<body>
+    <h1 style="text-align: center;"><i>2ICorp</i></h1>
+    <div>
+    <h2>Register Account</h2>
+    <p>If you already have an account with us, please login at the <a href="./Login with CustomerId.html">login with CustomerId</a>.</p>
+    <form action="./Open Free Demat Account.html" method="post" enctype="multipart/form-data">
+      
+      <p><b>Please fill in this form to create an account.</b></p>
+
+      <h2>Your Personal Details</h2>
+      <div class="content">
+        <table class="form">
+          <tbody><tr>
+            <td><span class="required">*</span> First Name:</td>
+            <td><input type="text" name="firstname" value="">
+              </td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span> Last Name:</td>
+            <td><input type="text" name="lastname" value="">
+              </td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span><label for="birthday">Birthday:</label></td>
+              <td><input type="date" id="birthday" name="birthday"></td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span><label for="Age">Age:</label></td>
+              <td><input type="text" id="age" value=""></td>
+          </tr>
+
+          <tr>
+            <td><span class="required">*</span> <label for="emailField">E-mail:</label></td>
+            <td><input type="email" name="emailField" id="emailField" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" required />
+              </td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span> Confirm E-Mail:</td>
+            <td><input type="text" name="confirm" value="">
+              </td>
+          </tr>
+
+          <tr>
+            <td><span class="required">*</span> Mobile Number: (Do not add +91 or 0 )</td>
+            <td><input type="text" name="Mobile" value="">
+              </td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span> Confirm Mobile Number:</td>
+            <td><input type="text" name="confirm" value="">
+              </td>
+          </tr>
+          <tr>
+            <td>Alternate Phone :</td>
+            <td><input type="text" name="fax" value=""></td>
+          </tr>
+        </tbody></table>
+      </div>
+      <h3>Your Address</h3>
+      <div class="content">
+        <table class="form">
+          <tbody>      
+          <tr style="display: none;">
+            <td>Business Type:</td>
+            <td>                        <input type="radio" name="customer_group_id" value="1" id="customer_group_id1" checked="checked">
+              <label for="customer_group_id1">Default</label>
+              <br>
+                          </td>
+          </tr>      
+          
+          <tr>
+            <td><span class="required">*</span> Address Line 1:</td>
+            <td><input type="text" name="address_1" value="">
+              </td>
+          </tr>
+          <tr>
+            <td>Address Line 2:</td>
+            <td><input type="text" name="address_2" value=""></td>
+          </tr>
+          <tr>
+            <td>Address Line 3:</td>
+            <td><input type="text" name="address_3" value=""></td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span> City:</td>
+            <td><input type="text" name="city" value="">
+              </td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span> District:</td>
+            <td><input type="text" name="district" value="">
+              </td>
+          </tr>
+          <tr>
+            <td><span id="postcode-required" class="required">*</span> Pin Code (valid pincode without spaces): </td>
+            <td><input type="text" name="postcode" value="">
+              </td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span> Country:</td>
+            <td><select name="country_id">
+                <option value=""> --- Please Select --- </option>
+                                            <option value="99" selected="selected">India</option>
+                                          </select>
+              </td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span> State:</td>
+            <td><select name="zone_id"><option value=""> --- Please Select --- </option><option value="1475">Andaman and Nicobar Islands</option><option value="1476">Andhra Pradesh</option><option value="1477">Arunachal Pradesh</option><option value="1478">Assam</option><option value="1479">Bihar</option><option value="1480">Chandigarh</option><option value="4034">Chhattisgarh</option><option value="1481">Dadra and Nagar Haveli</option><option value="1482">Daman and Diu</option><option value="1483">Delhi</option><option value="1484">Goa</option><option value="1485">Gujarat</option><option value="1486">Haryana</option><option value="1487">Himachal Pradesh</option><option value="1488">Jammu and Kashmir</option><option value="4037">JHARKHAND</option><option value="1489">Karnataka</option><option value="1490">Kerala</option><option value="1491">Lakshadweep Islands</option><option value="1492">Madhya Pradesh</option><option value="1493">Maharashtra</option><option value="1494">Manipur</option><option value="1495">Meghalaya</option><option value="1496">Mizoram</option><option value="1497">Nagaland</option><option value="1498">Orissa</option><option value="1499">Pondicherry</option><option value="1500">Punjab</option><option value="1501">Rajasthan</option><option value="1502">Sikkim</option><option value="1503">Tamil Nadu</option><option value="4033">Telengana</option><option value="1504">Tripura</option><option value="1505">Uttar Pradesh</option><option value="4035">Uttarakhand</option><option value="1506">West Bengal</option></select>
+              </td>
+          </tr>
+        </tbody></table>
+      </div>
+
+      <h4>Add Your Account Details</h4>
+      <div class="content">
+        <table class="form">
+          <tbody>
+            <tr>
+              <td><span class="required">*</span><label for="Aadhar Number">Aadhar Number:</label></td>
+                <td><input type="text" id="aadhar Number" value=""></td>
+            </tr>
+            <tr>
+              <td><span class="required">*</span><label for="PAN Number">PAN Number:</label></td>
+                <td><input type="text" id="PAN Number" value=""></td>
+            </tr>
+            <tr>
+            <td><span class="required">*</span> Account Number:</td>
+            <td><input type="text" name="password" value="">
+              </td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span> Confirm Account Number:</td>
+            <td><input type="text" name="confirm" value="">
+              </td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span> IFSC Code:</td>
+            <td><input type="text" name="ifsc_code" value="">
+              </td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span>Upload Canceled Check:</td>
+            <td><input type="file" id="myFile" name="filename"></td>
+          </tr>
+        </tbody></table>
+      </div>
+
+            <h2>Create Your Credentials</h2>
+      <div class="content">
+        <table class="form">
+          <tbody><tr>
+            <td><span class="required">*</span> UserName:</td>
+            <td><input type="text" name="username" value="">
+              </td>
+          </tr>
+            
+            <tr>
+            <td><span class="required">*</span> Password:</td>
+            <td><input type="password" name="password" value=""
+              pattern="(?=^.{16,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" 
+              title="Must contain at least one number and one uppercase and lowercase letter and one special characters, and at least 8 or more characters" required>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="required">*</span> Password Confirm:</td>
+            <td><input type="password" name="confirm" value="">
+              </td>
+          </tr>
+        </tbody></table>
+      </div>
+      <h2>Newsletter</h2>
+      <div class="tab">
+        <table class="form">
+          <tbody><tr>
+            <td>Subscribe:</td>
+            <td>            <input type="radio" name="newsletter" value="1">
+              Yes            <input type="radio" name="newsletter" value="0" checked="checked">
+              No            </td>
+          </tr>
+        </tbody></table>
+      </div>
+          <div class="buttons">
+        <div class="right">I have read and agree to the <a class="colorbox cboxElement" href="https://www.2ICorp.com/information/information/info.aspx?information_id=3" alt="Privacy Policy"><b>Privacy Policy</b></a>                <input type="checkbox" name="agree" value="1">
+                  <input type="submit" value="CONTINUE" class="button">
+        </div>
+      </div>
+
+      
+        </form>
+    </div> 
+
+</body>
+</html>

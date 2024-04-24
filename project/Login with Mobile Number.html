@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Email</title>
+</head>
+<body>
+    <div id="id01" class="modal">
+  
+        <form action="#" method="post"></form>
+    
+    <div class="container">
+      <label for="umobilenumber"><b>Mobile Number:</b></label>
+      <input type="tel" id="phone" placeholder="Enter User Mobile Number" pattern="[0-9]{10}" name="umobilenumber" required>
+
+       
+      <label for="psw"><b>Password:</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Generate OTP</button>
+                
+                <div class="prompt">
+                    Enter OTP:
+                </div>
+                
+                
+                    <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                    <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                    <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                    <input type="text" id="digit-4" name="digit-4" data-previous="digit-3" />
+                
+                        </form>
+    <a href="./2ICorpHome.html"><button type="submit">Submit</button></a>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</body>
+</html>

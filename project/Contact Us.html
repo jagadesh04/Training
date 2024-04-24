@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        </style>
+        
+</head>
+<body>
+    <h1>Contact Form</h1>
+
+<div class="container">
+  <form action="#">
+    <tbody>
+    <tr>
+   <td> <label for="fname">First Name</label></td>
+    <td><input type="text" id="fname" name="firstname" placeholder="Your name"></td>
+    <tr>
+<br>
+    <tr>
+        <td> <label for="lname">Last Name</label></td>
+        <td><input type="text" id="lname" name="lastname" placeholder="Your last name"></td>
+    </tr>
+<br>
+
+<tr>
+    <td><label for="emailField">E-mail:</label></td>
+    <td><input type="text" name="emailField" id="emailField" title="Invalid email address" required />
+      </td>
+  </tr>
+  <br>
+  <tr>
+    <td><label for="Mobile Number"> Mobile Number: (Do not add +91 or 0 )</label></td>
+    <td><input type="text" id="phone" placeholder="Enter User Mobile Number" pattern="[0-9]{10}" name="umobilenumber" required>
+      </td>
+  </tr>
+  <br>
+
+<tr>
+    <td><label for="country">Country</label></td>
+    
+        <select name="country_id">
+            <option value=""> --- Please Select --- </option>
+                                        <option value="99" selected="">India</option>
+                                        <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+                                      </select>
+                                    </tr>
+    <br>
+    <tr> 
+        <td><label for="state">State</label></td>
+            <td><select name="zone_id"><option value=""> --- Please Select --- </option><option value="1475">Andaman and Nicobar Islands</option><option value="1476">Andhra Pradesh</option><option value="1477">Arunachal Pradesh</option><option value="1478">Assam</option><option value="1479">Bihar</option><option value="1480">Chandigarh</option><option value="4034">Chhattisgarh</option><option value="1481">Dadra and Nagar Haveli</option><option value="1482">Daman and Diu</option><option value="1483">Delhi</option><option value="1484">Goa</option><option value="1485">Gujarat</option><option value="1486">Haryana</option><option value="1487">Himachal Pradesh</option><option value="1488">Jammu and Kashmir</option><option value="4037">JHARKHAND</option><option value="1489">Karnataka</option><option value="1490">Kerala</option><option value="1491">Lakshadweep Islands</option><option value="1492">Madhya Pradesh</option><option value="1493">Maharashtra</option><option value="1494">Manipur</option><option value="1495">Meghalaya</option><option value="1496">Mizoram</option><option value="1497">Nagaland</option><option value="1498">Orissa</option><option value="1499">Pondicherry</option><option value="1500">Punjab</option><option value="1501">Rajasthan</option><option value="1502">Sikkim</option><option value="1503">Tamil Nadu</option><option value="4033">Telengana</option><option value="1504">Tripura</option><option value="1505">Uttar Pradesh</option><option value="4035">Uttarakhand</option><option value="1506">West Bengal</option></select>
+              </td>
+              </tr>
+    <tr>
+        <td><label for="subject">Subject</label></td>
+            <td><textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea></td>
+<brS>
+    </tr>
+
+    <input type="file" id="myFile" name="filename">
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

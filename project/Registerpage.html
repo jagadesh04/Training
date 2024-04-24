@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1 style="text-align: center;"><i>2ICorp</i></h1>
+    <div>
+    <h2>Register Account</h2>
+    <p>If you already have an account with us, please login at the <a href="./Loginpage.html">login page</a>.</p>
+    <form action="#" method="post" enctype="multipart/form-data">
+        
+                <div><label><input name="radio" type="radio" value="1" onclick="myFunction()">Register with Phone Number</label></div><br>
+        <div>
+            <form>
+                <div>
+                    <label for="phone">Enter Your Mobile Number</label>
+            <input autocomplete="off" type="tel" id="phone" maxlength="10" autofocus="" inputmode="numeric" pattern="[0-9]{10}" required>
+           <br>
+            <label for="psw">Create Password:</label>
+            <input type="password" placeholder="Enter Password" name="psw" 
+              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" 
+              title="Must contain at least one number and one uppercase and lowercase letter and one special characters, and at least 8 or more characters" required>
+               <br>
+            <label for="psw">Confirm Password:</label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+               <br>
+        </div>
+            <button type="submit">Generate OTP</button>
+            <div class="prompt">
+                Enter OTP:
+            </div>
+            
+            
+                <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                <input type="text" id="digit-4" name="digit-4" data-previous="digit-3" />
+                
+            </form>
+            <a href="./Login with Mobile Number.html"><button type="submit">Submit</button></a><br><br></div>
+
+        <div><label><input name="radio" type="radio" value="2">Register with Email ID</label></div><br>
+            <div>
+                <form>
+                    <div>
+                        <label for="email">Enter Your Email Id</label>
+                <input autocomplete="off" type="text" id="email" maxlength="30" autofocus="" inputmode="text" 
+                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" value="" required >
+                
+                   <br> 
+                           
+                <label for="psw">Create Password:</label>
+                <input type="password" placeholder="Enter Password" name="psw" 
+                 pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" 
+                 title="Must contain at least one number and one uppercase and lowercase letter and one special characters, and at least 8 or more characters" required>
+                 
+                <br>
+                <label for="psw">Confirm Password:</label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                     <br>  
+            </div>
+                <button type="submit">Generate OTP</button>
+                
+                <div class="prompt">
+                    Enter OTP:
+                </div>
+                
+                
+                    <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                    <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                    <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                    <input type="text" id="digit-4" name="digit-4" data-previous="digit-3" />
+                
+                        </form>
+                        
+                        <a href="./Login with Email.html"><button type="submit">Submit</button></a><br>
+                    </div>
+</body>
+</html>
